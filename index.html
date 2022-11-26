@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="crashcourse.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+        <nav>
+            <img class="close" src="cancel.png" alt="" width="20%">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <svg class="menu" viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the court</h1>
+            <p class="subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam nulla est autem aliquid ullam quisquam, dicta nam rem voluptatibus.</p>
+            <img src="icons8.png" class="down-arrow" alt="">
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, velit!</p>
+                </div>
+                <img src="shoe1.jpg" alt="Another shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, velit!</p>
+                </div>
+                <img src="shoe2.jpg" alt="Another shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, velit!</p>
+                </div>
+                <img src="shoe3.jpg" alt="Another shoe">
+            </div>
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
